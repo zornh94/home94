@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/tndevr/packages"
+	"github.com/tndevr/pkgg"
 )
 
 func main(){
 	r := gin.Default()
-	r.GET("/",packages.Greeting)
-	fmt.Printf("Server listen Default %s",packages.ADDR)
-	r.Run(packages.ADDR)
+	r.GET("/",pkgg.Greeting)
+	fmt.Printf("Server listen Default %s",pkgg.ADDR)
+	r.Run(pkgg.ADDR)
 }
