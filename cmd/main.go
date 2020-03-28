@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/tndevr/packages"
-	"net/http"
+//	"net/http"
 )
 /*
 func main(){
@@ -19,6 +19,6 @@ func main(){
 func main(){
 	r := gin.Default()
 	r.GET("/",packages.Greeting)
-	fmt.Println("Server listen Default 8080")
-	r.Run()
+	fmt.Printf("Server listen Default %s",packages.ADDR)
+	r.Run(packages.ADDR)
 }
